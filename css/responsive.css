@@ -1,0 +1,45 @@
+ @media (max-width:1200px) {
+     html {
+         font-size: 70%;
+     }
+     .single_package {
+         width: 45%;
+     }
+ }
+ 
+ @media (max-width: 991px) {
+     html {
+         font-size: 60%;
+     }
+     .main_menu {
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: -1000%;
+         background: #333;
+     }
+     .main_menu ul {
+         flex-direction: column;
+         text-align: center;
+     }
+     .main_menu ul li {
+         width: 100%;
+     }
+     .main_menu ul li a {
+         display: inline-block;
+         border-top: 1px solid rgba(255, 255, 255, 03);
+         width: 100%;
+     }
+     .menu_bar {
+         display: block;
+     }
+     .search_form {
+         border-radius: 5px;
+     }
+ }
+ 
+ @media (max-width:1250px) {
+     .single_package {
+         width: 48%;
+     }
+ }

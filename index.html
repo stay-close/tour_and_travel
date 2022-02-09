@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour And Travel.</title>
+    <!-- font awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- css for responsive  -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- header area start -->
+
+    <header class="header_area">
+        <div class="container">
+            <div class="header_items">
+                <div class="menu_bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <h1><span>t</span>ravel</h1>
+                </div>
+                <div class="main_menu">
+                    <nav>
+                        <ul>
+                            <li> <a href="#">home</a> </li>
+                            <li> <a href="#book">book</a> </li>
+                            <li> <a href="#package">packages</a> </li>
+                            <li> <a href="#service">services</a> </li>
+                            <li> <a href="#gallary">gallary</a> </li>
+                            <li> <a href="#review">review</a> </li>
+                            <li> <a href="#contact">contact</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="search_login">
+                    <div class="search"><a href=""><i class="fas fa-search"></i></a></div>
+                    <div class="login"><a href=""><i class="fas fa-user"></i></a></div>
+                </div>
+                <div class="search_form">
+                    <form action="">
+                        <input type="search" id="header_search" placeholder="search here....">
+                        <label for="header_search"><i class="fas fa-search"></i></label>
+                    </form>
+                </div>
+                <div class="login_form">
+                    <form action="">
+                        <div class="cross">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                        <h1>user login</h1>
+                        <label for="email">Enter Your Username OR Email:</label>
+                        <input type="email" id="email" placeholder="email/username">
+
+                        <label for="password">Enter Your Password:</label>
+                        <input type="password" id="password" placeholder="password">
+
+
+                        <input type="submit" value="Login" class="btn">
+                        <div class="signup">
+                            <p>Forgot your password ? <a href="">click here.</a></p>
+                            <p>Don't have an account? <a href="">register now.</a></p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header area end -->
+
+    <!-- slider area start -->
+
+    <section class="slider_area">
+
+        <div class="slider_content">
+            <h1>adventure is worthwhile</h1>
+            <p>discover new place with us, adventure awaits</p>
+            <a href="">discover more</a>
+            <div class="slider_control">
+                <span class='control active' data-src='videos/vid-1.mp4'></span>
+                <span class='control' data-src='videos/vid-2.mp4'></span>
+                <span class='control' data-src='videos/vid-3.mp4'></span>
+                <span class='control' data-src='videos/vid-4.mp4'></span>
+                <span class='control' data-src='videos/vid-5.mp4'></span>
+            </div>
+            <div class="video_container">
+                <video src="videos/vid-1.mp4" id="video_slider" loop autoplay muted></video>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- slider area end -->
+
+    <!-- booking area start -->
+
+    <section class="booking_area" id="book">
+        <div class="container">
+
+            <h2 class="heading">
+                <span>b</span>
+                <span>o</span>
+                <span>o</span>
+                <span>k</span>
+                <span class="space"></span>
+                <span>n</span>
+                <span>o</span>
+                <span>w</span>
+            </h2>
+
+            <div class="booking">
+                <div class="booking_img">
+                    <img src="images/book-img.svg" alt="Travel">
+                </div>
+
+                <form action="" class="book_form">
+                    <div class="book_input">
+                        <h3>where to</h3>
+                        <input type="text" id="where" placeholder="place name">
+                    </div>
+
+                    <div class="book_input">
+                        <h3>how many</h3>
+                        <input type="number" id="how_many" placeholder="number of guests">
+                    </div>
+                    <div class="book_input">
+                        <h3>arivals</h3>
+                        <input type="date" id='arival'>
+                    </div>
+                    <div class="book_input">
+                        <h3>leaving</h3>
+                        <input type="date" id="leaving">
+                    </div>
+                    <a href="" class="btn">book now</a>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- booking area end -->
+
+    <!-- packages area start -->
+
+    <section class="packages_area" id="package">
+        <div class="container">
+            <h2 class="heading">
+                <span>p</span>
+                <span>a</span>
+                <span>c</span>
+                <span>k</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>s</span>
+            </h2>
+            <div class="packages">
+                <div class="single_package">
+                    <img src="images/p-1.jpg" alt="package image">
+                    <div class="package_details">
+                        <h3> <i class="fas fa-map-marker-alt"></i> mumbai</h3>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, beatae.</p>
+                        <p class="price">$90.00 <span>$120.00</span></p>
+                        <a href="" class="btn">book now</a>
+                    </div>
+                </div>
+                <div class="single_package">
+                    <img src="images/p-2.jpg" alt="package image">
+                    <div class="package_details">
+                        <h3> <i class="fas fa-map-marker-alt"></i> hawaii</h3>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, beatae.</p>
+                        <p class="price">$90.00 <span>$120.00</span></p>
+                        <a href="" class="btn">book now</a>
+                    </div>
+                </div>
+                <div class="single_package">
+                    <img src="images/p-3.jpg" alt="package image">
+                    <div class="package_details">
+                        <h3> <i class="fas fa-map-marker-alt"></i> sydney</h3>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, beatae.</p>
+                        <p class="price">$90.00 <span>$120.00</span></p>
+                        <a href="" class="btn">book now</a>
+                    </div>
+                </div>
+                <div class="single_package">
+                    <img src="images/p-4.jpg" alt="package image">
+                    <div class="package_details">
+                        <h3> <i class="fas fa-map-marker-alt"></i> paris</h3>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, beatae.</p>
+                        <p class="price">$90.00 <span>$120.00</span></p>
+                        <a href="" class="btn">book now</a>
+                    </div>
+                </div>
+                <div class="single_package">
+                    <img src="images/p-5.jpg" alt="package image">
+                    <div class="package_details">
+                        <h3> <i class="fas fa-map-marker-alt"></i> tokyo</h3>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, beatae.</p>
+                        <p class="price">$90.00 <span>$120.00</span></p>
+                        <a href="" class="btn">book now</a>
+                    </div>
+                </div>
+                <div class="single_package">
+                    <img src="images/p-6.jpg" alt="package image">
+                    <div class="package_details">
+                        <h3> <i class="fas fa-map-marker-alt"></i> egypt</h3>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, beatae.</p>
+                        <p class="price">$90.00 <span>$120.00</span></p>
+                        <a href="" class="btn">book now</a>
+                    </div>
+                </div>
+                <div class="single_package">
+                    <img src="images/p-1.jpg" alt="package image">
+                    <div class="package_details">
+                        <h3> <i class="fas fa-map-marker-alt"></i> mumbai</h3>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, beatae.</p>
+                        <p class="price">$90.00 <span>$120.00</span></p>
+                        <a href="" class="btn">book now</a>
+                    </div>
+                </div>
+                <div class="single_package">
+                    <img src="images/p-1.jpg" alt="package image">
+                    <div class="package_details">
+                        <h3> <i class="fas fa-map-marker-alt"></i> mumbai</h3>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, beatae.</p>
+                        <p class="price">$90.00 <span>$120.00</span></p>
+                        <a href="" class="btn">book now</a>
+                    </div>
+                </div>
+                <div class="single_package">
+                    <img src="images/p-1.jpg" alt="package image">
+                    <div class="package_details">
+                        <h3> <i class="fas fa-map-marker-alt"></i> mumbai</h3>
+                        <div class="rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, beatae.</p>
+                        <p class="price">$90.00 <span>$120.00</span></p>
+                        <a href="" class="btn">book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- packages area end -->
+
+
+    <!-- service area start  -->
+
+    <section class="service_area" id="service">
+        <div class="container">
+            <h2 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h2>
+
+            <div class="service">
+                <div class="single_service">
+                    <i>logo</i>
+                    <h3>affordable hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus maxime aut? Odio impedit nisi ratione. Corrupti neque, laudantium facilis quos magni dolores sint corporis.</p>
+
+                </div>
+                <div class="single_service">
+                    <i>logo</i>
+                    <h3>affordable hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus maxime aut? Odio impedit nisi ratione. Corrupti neque, laudantium facilis quos magni dolores sint corporis.</p>
+
+                </div>
+                <div class="single_service">
+                    <i>logo</i>
+                    <h3>affordable hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus maxime aut? Odio impedit nisi ratione. Corrupti neque, laudantium facilis quos magni dolores sint corporis.</p>
+
+                </div>
+                <div class="single_service big">
+                    <i>logo</i>
+                    <h3>affordable hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus maxime aut? Odio impedit nisi ratione. Corrupti neque, laudantium facilis quos magni dolores sint corporis.</p>
+
+                </div>
+                <div class="single_service big">
+                    <i>logo</i>
+                    <h3>affordable hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus maxime aut? Odio impedit nisi ratione. Corrupti neque, laudantium facilis quos magni dolores sint corporis.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- service area end -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
