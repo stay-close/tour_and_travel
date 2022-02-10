@@ -21,6 +21,11 @@
         scroll-behavior: smooth;
     }
     
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
     i {
         color: var(--orange);
         font-size: 20px;
@@ -55,11 +60,6 @@
         right: 0;
         top: 0;
         z-index: 100000;
-    }
-    
-    .container {
-        width: 80%;
-        margin: 0 auto;
     }
     
     .header_items {
@@ -270,7 +270,7 @@
         background: rgba(0, 0, 0, .7);
         color: var(--orange);
     }
-    /* css for slider area */
+    /*--------css for slider area---------- */
     
     .slider_area {
         width: 100%;
@@ -358,13 +358,13 @@
         object-fit: cover;
         z-index: -2;
     }
-    /* css for booking area */
+    /*---------- css for booking area----------- */
     
     .booking_area {
         margin-top: -45px;
     }
     
-    .heading {
+    .section_heading {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -376,29 +376,24 @@
         margin: 25px 0;
     }
     
-    .heading span {
+    .section_heading span {
         padding: 7px 10px;
         background: rgba(255, 165, 0, .3);
         border-radius: 5px;
     }
     
-    .heading span.space {
+    .section_heading span.space {
         background: none;
     }
     
     .booking {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .booking_img {
-        flex: 1 1 42rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     
     .booking_img img {
         width: 100%;
+        height: 100%;
     }
     
     .book_form {
@@ -422,18 +417,17 @@
         border: 0.5px solid rgba(0, 0, 0, .2);
         width: 100%;
     }
-    /* css for packages area */
+    /*------------ css for packages area ---------*/
     
     .packages {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     
     .single_package {
         transform-style: preserve-3d;
         perspective: 1000px;
-        width: 32%;
         cursor: pointer;
         margin-top: 20px;
         border-radius: 5px;
@@ -481,23 +475,116 @@
         font-size: 14px;
         text-decoration: line-through;
     }
-    /* css for services area */
+    /*---- ----css for services area --------*/
     
     .service {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
     }
     
     .single_service {
-        width: 32.5%;
         text-align: center;
         margin-top: 20px;
-        padding: 10px;
+        padding: 20px;
         border-radius: 5px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
     }
     
-    .single_service.big {
-        width: 49%;
+    .single_service:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+        cursor: pointer;
+    }
+    
+    .single_service i {
+        font-size: 50px;
+    }
+    
+    .single_service h3 {
+        font-size: 25px;
+        color: #666;
+        margin: 10px 0;
+    }
+    /*------- gallery area--------- */
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .single_gallery {
+        position: relative;
+        border-radius: 1px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+        border: 1rem solid #fff;
+    }
+    
+    .single_gallery.big {
+        grid-column: span 4;
+    }
+    
+    .single_gallery:hover .gal_content {
+        top: 0;
+    }
+    
+    .single_gallery:hover img {
+        transform: scale(1.1);
+    }
+    
+    .single_gallery img {
+        object-fit: cover;
+        width: 100%;
+        height: 230px;
+    }
+    
+    .gal_content {
+        position: absolute;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        padding: 45px 5px;
+        text-align: center;
+        background: rgba(0, 0, 0, .3);
+        color: #fff;
+    }
+    
+    .gal_content h3 {
+        color: var(--orange);
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    
+    .gal_content p {
+        margin-bottom: 10px;
+    }
+    /* ----review area ---- */
+    
+    .review_area {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .review_slider {
+        display: flex;
+    }
+    
+    .single_review {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+    
+    .single_review img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .single_review h3 {
+        font-size: 30px;
+        text-transform: capitalize;
+        margin: 15px 0;
     }

@@ -2,9 +2,6 @@
      html {
          font-size: 70%;
      }
-     .single_package {
-         width: 45%;
-     }
  }
  
  @media (max-width: 991px) {
@@ -36,10 +33,25 @@
      .search_form {
          border-radius: 5px;
      }
+     .booking {
+         grid-template-columns: 1fr;
+     }
+     .packages {
+         grid-template-columns: 1fr 1fr;
+     }
+     .service {
+         grid-template-columns: 1fr 1fr;
+     }
  }
  
- @media (max-width:1250px) {
-     .single_package {
-         width: 48%;
+ @media (max-width:768px) {
+     html {
+         font-size: 80%;
+     }
+     .packages {
+         grid-template-columns: 1fr;
+     }
+     .service {
+         grid-template-columns: 1fr;
      }
  }

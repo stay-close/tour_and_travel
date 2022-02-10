@@ -46,3 +46,19 @@ controlBtn.forEach(btn => {
         document.querySelector('#video_slider').src = src;
     })
 })
+
+
+
+$(document).ready(function() {
+
+    $(".review_slider").owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 30,
+        autoplay: true
+
+
+    });
+
+
+});
