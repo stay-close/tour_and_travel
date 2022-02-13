@@ -36,11 +36,17 @@
      .booking {
          grid-template-columns: 1fr;
      }
-     .packages {
+     .packages,
+     .gallery,
+     .service,
+     .footer_content {
          grid-template-columns: 1fr 1fr;
      }
-     .service {
-         grid-template-columns: 1fr 1fr;
+     .contact_content {
+         grid-template-columns: 1fr;
+     }
+     .single_gallery.big {
+         grid-column: span 2;
      }
  }
  
@@ -48,10 +54,20 @@
      html {
          font-size: 80%;
      }
-     .packages {
+     .packages,
+     .gallery,
+     .service,
+     .footer_content {
          grid-template-columns: 1fr;
      }
-     .service {
-         grid-template-columns: 1fr;
+     .single_gallery.big {
+         grid-column: span 1;
+     }
+     .footer_content {
+         grid-template-columns: 1fr 1fr;
+     }
+     .follow_us,
+     .location {
+         text-align: right;
      }
  }

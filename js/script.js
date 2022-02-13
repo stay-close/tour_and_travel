@@ -49,16 +49,47 @@ controlBtn.forEach(btn => {
 
 
 
-$(document).ready(function() {
-
-    $(".review_slider").owlCarousel({
-        items: 3,
-        loop: true,
-        margin: 30,
-        autoplay: true
 
 
-    });
+var swiper = new Swiper(".review_slider", {
+    spaceBetween: 20,
+    loop: true,
 
-
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
+var swiper = new Swiper(".brand_slider", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+    },
 });

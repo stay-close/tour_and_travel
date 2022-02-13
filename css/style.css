@@ -21,6 +21,10 @@
         scroll-behavior: smooth;
     }
     
+    ul {
+        list-style: none;
+    }
+    
     .container {
         width: 80%;
         margin: 0 auto;
@@ -106,7 +110,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        list-style: none;
     }
     
     .main_menu ul li a {
@@ -431,7 +434,7 @@
         cursor: pointer;
         margin-top: 20px;
         border-radius: 5px;
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+        box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
     }
     
     .single_package:hover {
@@ -563,28 +566,124 @@
     /* ----review area ---- */
     
     .review_area {
-        width: 80%;
-        margin: 0 auto;
+        padding: 20px 0;
     }
     
-    .review_slider {
-        display: flex;
+    .review_area .box {
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        border-radius: .5rem;
     }
     
-    .single_review {
-        width: 200px;
-        height: 200px;
+    .review_area .box img {
+        height: 13rem;
+        width: 13rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+    
+    .review_area .box h3 {
+        color: #333;
+        font-size: 25px;
+    }
+    
+    .review_area .box p {
+        color: #666;
+        font-size: 16px;
+        padding: 1rem 0;
+    }
+    
+    .revreview_areaiew .box .stars i {
+        color: var(--orange);
+        font-size: 1.7rem;
+    }
+    /* ----contact area css----- */
+    
+    .contact_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    
+    .contact_img img {
+        zoom: .5;
+    }
+    
+    form.contact_form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content min-content min-content;
+        grid-gap: 20px;
+        box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+        padding: 15px;
+    }
+    
+    form.contact_form input {
+        padding: 15px;
+        background: #f7f7f7;
+    }
+    
+    form.contact_form textarea {
+        background: #f7f7f7;
+        grid-column: span 2;
+        padding: 15px;
+    }
+    /* ------brand area css----- */
+    
+    .brand_area {
+        padding: 100px 0;
         text-align: center;
     }
+    /* -----footer area----- */
     
-    .single_review img {
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
+    .footer_area {
+        background: #333;
+        color: #fff;
+        padding: 50px 0;
     }
     
-    .single_review h3 {
-        font-size: 30px;
+    .footer_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        border-bottom: 3px solid #ddd;
+        padding-bottom: 30px;
+    }
+    
+    .footer_content_heading h3 {
+        font-size: 25px;
         text-transform: capitalize;
-        margin: 15px 0;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    
+    .about_us p {
+        font-size: 15px;
+    }
+    
+    .footer_content ul li a {
+        padding: 5px 0;
+        display: block;
+        color: #fff;
+        font-size: 15px;
+    }
+    
+    .footer_content ul li a:hover {
+        color: var(--orange);
+        text-decoration: underline;
+    }
+    
+    .copy_right {
+        text-align: center;
+        padding-top: 20px
+    }
+    
+    .copy_right h2 {
+        font-size: 30px;
+    }
+    
+    .copy_right h2 span {
+        color: var(--orange)
     }
