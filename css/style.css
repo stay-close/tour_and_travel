@@ -16,9 +16,9 @@
     }
     
     html {
-        overflow-x: hidden;
         scroll-padding-top: 6rem;
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
     
     ul {
@@ -61,7 +61,7 @@
         background: #333;
         position: fixed;
         left: 0;
-        right: 0;
+        width: 100vw;
         top: 0;
         z-index: 100000;
     }
@@ -256,7 +256,7 @@
     }
     
     .login_form.active {
-        top: 616%;
+        top: 400%;
     }
     
     .login_form form {
@@ -266,8 +266,8 @@
         justify-content: center;
         flex-direction: column;
         padding: 40px 20px;
-        width: 40%;
-        height: 70%;
+        width: 70%;
+        height: 80%;
         border-radius: 30px;
         filter: drop-shadow(10px 10px 25px rgba(255, 165, 0, .3));
         background: rgba(0, 0, 0, .7);
@@ -429,8 +429,6 @@
     }
     
     .single_package {
-        transform-style: preserve-3d;
-        perspective: 1000px;
         cursor: pointer;
         margin-top: 20px;
         border-radius: 5px;
@@ -605,10 +603,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
-    }
-    
-    .contact_img img {
-        zoom: .5;
     }
     
     form.contact_form {
